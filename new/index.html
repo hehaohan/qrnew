@@ -1,0 +1,191 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>三合一收款码在线生成</title>
+    <meta name="description" content="半成熟三合一收款码，打造最简便收款服务，支持微信、支付宝、QQ。" />
+    <meta name="keywords" content="半成熟收款码,付款码,三合一收款码,五合一收款码,收款码美化,支付宝收款码" />
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link href="./css/amazeui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+<!--a href="https://github.com/takashiki/ourls">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="./htmlimg/13cd972c0f6042002eddea81058802f4.png" alt=""" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+</a-->
+
+<div class="header">
+    <div class="am-g">
+        <h1>半成熟</h1>
+        <p>半成熟收款码<br>打造最简洁收款服务</p>
+    </div>
+    <hr>
+</div>
+
+<div class="am-g">
+    <div id="content" class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+        <div class="am-panel am-panel-primary">
+            <div class="am-panel-bd">二维码识别工具<a href="https://cli.im/tools" style="color:red;">链接提取</a>  上传二维码图片并获取到二维码中的收款链接。<br>微信，支付宝 可直接上传二维码 自动识别，由于QQ的二维码链接过长，系统无法识别 只能通过上面的工具识别。</div>
+        </div>
+        <form class="am-form" id="shorturl">
+            <div class="am-form-group am-g-collapse">
+              <div class="am-u-sm-8">
+                <input type="text" name="alipay_url" id="alipay_url" placeholder="支付宝收款链接">
+              </div>
+              <div class="am-form-group am-form-file">
+                <button type="button" class="am-btn am-btn-danger am-btn-sm"><i class="am-icon-cloud-upload"></i> 选择支付宝收款码</button>
+                <input id="alipay_url" type="file" accept="image/*">
+              </div>
+            </div>
+            <div class="am-form-group am-g-collapse">
+              <div class="am-u-sm-8">
+                <input type="text" name="wechat_url" id="wechat_url" value="" placeholder="微信收款链接">
+              </div>
+              <div class="am-form-group am-form-file">
+                <button type="button" class="am-btn am-btn-danger am-btn-sm"><i class="am-icon-cloud-upload"></i> 选择 微 信 收款码</button> <input id="wechat_url" type="file" accept="image/*">
+              </div>
+            </div>
+            <div class="am-form-group am-g-collapse">
+              <div class="am-u-sm-8">
+                <input type="text" name="qq_url" id="qq_url" value="" placeholder="手机QQ收款链接">
+              </div>
+              <div class="am-form-group am-form-file">
+                <button type="button" class="am-btn am-btn-danger am-btn-sm"><i class="am-icon-cloud-upload"></i> 选择 Ｑ Ｑ 收款码</button> <input id="qq_url" type="file" accept="image/*">
+              </div>
+            </div>           
+            <br>
+                <ul class="am-avg-sm-3 am-thumbnails">
+                    <style type="text/css">
+                        .text-muted {text-align: center;}
+                        .text-muted img{max-height:300px;height:25%;width: 100%}
+                    </style>
+                    <li>
+                        <div class="am-thumbnail">
+                        <label class="text-muted">
+                            <img src="./htmlimg/005zWjpngy1fvajrc4crnj30m80xcdlr.jpg" id="tpl_1"/><div class="am-thumbnail-caption"><input type="radio" name="tpl_id" value="1"> 纯黄模板</div>
+                        </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-thumbnail">
+                        <label class="text-muted">
+                            <img src="./htmlimg/005zWjpngy1fvajrc68gqj30tv10idpc.jpg" id="tpl_2"/><div class="am-thumbnail-caption"><input type="radio" name="tpl_id" value="2"> 蓝白款式</div>
+                        </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-thumbnail">
+                        <label class="text-muted">
+                            <img src="./htmlimg/005zWjpngy1fvajrd25lcj31gh21te81.jpg" id="tpl_3"/><div class="am-thumbnail-caption"><input type="radio" name="tpl_id" value="3"> 纯蓝款式</div>
+                        </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-thumbnail">
+                        <label class="text-muted">
+                            <img src="./htmlimg/005zWjpngy1fvajrcqedvj30u01bs0zc.jpg" id="tpl_4"/><div class="am-thumbnail-caption"><input type="radio" name="tpl_id" value="4"> 白灰打印</div>
+                        </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-thumbnail">
+                        <label class="text-muted">
+                            <img src="./htmlimg/005zWjpngy1fvajrcx37dj30u01eegvl.jpg" id="tpl_5"/><div class="am-thumbnail-caption"><input type="radio" name="tpl_id" value="5"> 红包款式</div>
+                        </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-thumbnail">
+                        <label class="text-muted">
+                            <img src="./htmlimg/005zWjpngy1fvajrdnla1j30u01hcn62.jpg" id="tpl_8"/><div class="am-thumbnail-caption"><input type="radio" name="tpl_id" value="8"> 蓝白款式</div>
+                        </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-thumbnail">
+                        <label class="text-muted">
+                            <img src="./htmlimg/005zWjpngy1fvajrd816rj30m80dwdiq.jpg" id="tpl_6"/><div class="am-thumbnail-caption"><input type="radio" name="tpl_id" value="6"> 摔钱款式</div>
+                        </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-thumbnail">
+                        <label class="text-muted">
+                            <img src="./htmlimg/005zWjpngy1fvajrdff22j31b80xw479.jpg" id="tpl_7"/><div class="am-thumbnail-caption"><input type="radio" name="tpl_id" value="7"> 绿色横版</div>
+                        </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-thumbnail">
+                        <label class="text-muted">
+                            <img src="./htmlimg/005zWjpngy1fvajre8ccoj31z4140tok.jpg" id="tpl_9"/><div class="am-thumbnail-caption"><input type="radio" name="tpl_id" value="9"> 卡片板式</div>
+                        </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-thumbnail">
+                        <label class="text-muted">
+                            <img src="./htmlimg/005zWjpngy1fvajrgt7rdj32qj3ncu10.jpg" id="tpl_10"/><div class="am-thumbnail-caption"><input type="radio" name="tpl_id" value="10"> 快捷支付</div>
+                        </label>
+                        </div>
+                    </li>
+                </ul>
+            <div class="am-cf">
+                <input type="button" id="shorten" value="立即生成" class="am-btn am-btn-primary am-btn-sm am-fl" data-am-loading="{spinner: 'circle-o-notch',loadingText: '努力生成中...'} resetText: '请查收！'}" />
+            </div>
+        </form>
+        <img id="qrcode" class="am-center am-img-thumbnail am-img-responsive" style="width: 206px;display: none;">
+        <img id="temp" class="am-hide">
+        <hr>
+        <p>Copyright © 2018 <a href="#" target="_blank">半成熟</a></p>
+    </div>
+</div>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="./javascript/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="./javascript/jquery.min.js"></script>
+<script src="./javascript/modernizr.js"></script>
+<script src="./javascript/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="./javascript/amazeui.min.js"></script>
+<script src="./javascript/validator.min.js"></script>
+<script src="./javascript/jquery.qrcode.min.js"></script>
+<script src="./javascript/layer.js"></script>
+<script type="text/javascript">
+    tpl_data=new Object();
+    tpl_data[1]={tpl_w: 800,tel_h:1200,tpl_src:'img/1.jpg',qr_x:120,qr_y:120,qrsize:560};
+    tpl_data[2]={tpl_w:1075,tel_h:1314,tpl_src:'img/2.jpg',qr_x:327,qr_y:344,qrsize:429};
+    tpl_data[3]={tpl_w:1889,tel_h:2657,tpl_src:'img/3.jpg',qr_x:530,qr_y:440,qrsize:834};
+    tpl_data[4]={tpl_w:1080,tel_h:1720,tpl_src:'img/4.jpg',qr_x:218,qr_y:448,qrsize:640};
+    tpl_data[5]={tpl_w:1080,tel_h:1720,tpl_src:'img/5.jpg',qr_x:370,qr_y:585,qrsize:340};
+    tpl_data[6]={tpl_w: 800,tel_h: 500,tpl_src:'img/6.jpg',qr_x: 65,qr_y:130,qrsize:255};
+    tpl_data[7]={tpl_w:1700,tel_h:1220,tpl_src:'img/7.jpg',qr_x:1215,qr_y:340,qrsize:220};
+    tpl_data[8]={tpl_w:1080,tel_h:1920,tpl_src:'img/8.jpg',qr_x:210,qr_y:625,qrsize:660};
+    tpl_data[9]={tpl_w:2560,tel_h:1440,tpl_src:'img/9.jpg',qr_x:1720,qr_y:405,qrsize:340};
+    tpl_data[10]={tpl_w:4961,tel_h:6613,tpl_src:'img/10.jpg',qr_x:1717,qr_y:2311,qrsize:1537};
+</script>
+<script src="./javascript/llqrcode.js"></script>
+<script src="./javascript/index.js"></script>
+<script src="./javascript/external.js"></script>
+</body>
+</html>
